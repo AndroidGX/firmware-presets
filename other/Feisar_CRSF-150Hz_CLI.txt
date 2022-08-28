@@ -1,0 +1,29 @@
+#$ TITLE: Feisar CRSF 150Hz freestyle CLI
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: Other
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: other, CLI, betaflight, feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: for CRSF 150Hz locked
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Memo: CRSF to 12ch (LQ needs to be set at ch12 corresponding AUX8 to BF)
+#$ DESCRIPTION:
+#$ DESCRIPTION: (last preset update : 2022-01-24)
+#$ DESCRIPTION:
+
+
+
+
+# -- usual CRSF + LQ + TX16s receiver settings --
+
+map TAER1234
+set rc_smoothing_auto_factor = 50
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set min_check = 1015
+set max_check = 2000
+set rssi_channel = 12
+set serialrx_provider = CRSF
+set deadband = 2
+set yaw_deadband = 2

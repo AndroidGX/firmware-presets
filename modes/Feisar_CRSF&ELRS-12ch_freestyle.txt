@@ -1,0 +1,19 @@
+#$ TITLE: Feisar TX16S CRSF & ELRS (12ch) modes settings (freestyle)
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: MODES
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: mode, modes, aux, switch, betaflight, feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: My own TX16s AUX for my main freestyle quads.
+#$ DESCRIPTION: For both CRSF (12 channels) and ELRS link protocols.
+#$ DESCRIPTION:
+#$ DESCRIPTION: (last preset update : 2022-01-10)
+#$ DESCRIPTION:
+
+# aux switch settings
+
+aux 0 0 0 1975 2050 0 0
+aux 1 1 2 1475 1525 0 0
+aux 2 13 1 950 1025 0 0
+aux 3 35 1 1975 2050 0 0
+aux 4 36 3 1975 2050 0 0

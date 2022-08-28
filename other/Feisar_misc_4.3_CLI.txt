@@ -1,0 +1,24 @@
+#$ TITLE: Feisar misc BF 4.3 CLI settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: Other
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: other, CLI, betaflight, feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: Some personal custom CLI commands (will be constantly updated).
+#$ DESCRIPTION:
+#$ DESCRIPTION: (last preset update : 2022-01-10)
+#$ DESCRIPTION:
+
+
+
+
+# -- usual pidsum settings --
+
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+
+# -- usual filter settings --
+
+set dterm_lpf1_dyn_expo = 8
+set rpm_filter_fade_range_hz = 100

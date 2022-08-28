@@ -1,0 +1,97 @@
+#$ TITLE: Feisar 5" iFlight Nazgul V2 freestyle
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: tune, pid, 6S, 5", iflight, nazgul, feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: 
+#$ DESCRIPTION: [ Feisar 5" iFlight Nazgul V2 freestyle tuning preset ]
+#$ DESCRIPTION:
+#$ DESCRIPTION: RECOMMENDED SETUP:
+#$ DESCRIPTION: 	- Quad: original iFlight Nazgul V2
+#$ DESCRIPTION: 	- Props: 5x4x3
+#$ DESCRIPTION: 	- Frames: True-X
+#$ DESCRIPTION: 	- Motors: 2207 1800kv
+#$ DESCRIPTION: 	- Weight: ~755g AUW
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION: 	- This preset works perfect on my setup, but maybe absolutely NOT in yours
+#$ DESCRIPTION:		- Check carefuly motor temp before full sending (as always)
+#$ DESCRIPTION:
+#$ DESCRIPTION: RECOMMENDED SETTINGS:
+#$ DESCRIPTION: 	- Bluejay (ESC) settings : Motor timing 23 | PWM 48kHz | demag Low
+#$ DESCRIPTION: 	- Stack/BF various settings : DSHOT300 | 8k/4k pidloop
+#$ DESCRIPTION: 	- RPM filter enabled (check carefully amount of magnets)
+#$ DESCRIPTION:
+#$ DESCRIPTION: (last preset update: 2022-02-13)
+#$ DESCRIPTION:
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+
+
+
+# -- Misc --
+
+set dshot_bidir = ON
+set dyn_idle_min_rpm = 35
+set tpa_breakpoint = 1750
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set vbat_sag_compensation = 100
+set thrust_linear = 25
+set dyn_idle_min_rpm = 35
+
+
+# -- PID values --
+
+set p_pitch = 67
+set i_pitch = 120
+set d_pitch = 37
+set f_pitch = 151
+set d_min_pitch = 37
+
+set p_roll = 58
+set i_roll = 104
+set d_roll = 30
+set f_roll = 132
+
+set p_yaw = 58
+set i_yaw = 104
+set f_yaw = 132
+
+
+# -- Sliders --
+
+set simplified_pi_gain = 130
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 110
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter = OFF
+set simplified_gyro_filter = OFF
+
+
+# -- Filters --
+
+set rpm_filter_harmonics = 2
+set rpm_filter_fade_range_hz = 100
+
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 225
+
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 115
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 0
+
+set yaw_lowpass_hz = 0
+
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 450
