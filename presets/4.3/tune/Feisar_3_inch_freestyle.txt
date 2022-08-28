@@ -1,0 +1,96 @@
+#$ TITLE: Feisar 3" freestyle
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: tune, pid, 6S, 3", feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: 
+#$ DESCRIPTION: [ Feisar 3" quad 6S freestyle tuning preset ]
+#$ DESCRIPTION:
+#$ DESCRIPTION: RECOMMENDED SETUP:
+#$ DESCRIPTION: 	- Props: 3140
+#$ DESCRIPTION: 	- Frames: squished (Micro Apex)
+#$ DESCRIPTION: 	- Motors: 1507 2680kv (12 magnets)
+#$ DESCRIPTION: 	- Weight: ~330g AUW
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION: 	- This preset works perfect on my setup, but maybe absolutely NOT in yours
+#$ DESCRIPTION:		- Check carefuly motor temp before full sending (as always)
+#$ DESCRIPTION:
+#$ DESCRIPTION: RECOMMENDED SETTINGS:
+#$ DESCRIPTION: 	- BlHeli 32.8.3 testcode (ESC) settings : Motor timing 22 | PWM min 16kHz PWM max ByRPM | demag High
+#$ DESCRIPTION: 	- Stack/BF various settings : CPU F722 | GYRO MPU6000 | DSHOT300 | 8k/4k pidloop
+#$ DESCRIPTION: 	- RPM filter enabled (check carefully amount of magnets)
+#$ DESCRIPTION:
+#$ DESCRIPTION: (last preset update: 2022-03-27)
+#$ DESCRIPTION:
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+
+
+
+# -- Misc --
+
+set dshot_bidir = ON
+set dyn_idle_min_rpm = 54
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+set anti_gravity_gain = 3200
+set iterm_relax_cutoff = 18
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+
+# -- PID values --
+
+set p_pitch = 45
+set i_pitch = 82
+set d_pitch = 28
+set f_pitch = 186
+set p_roll = 38
+set i_roll = 68
+set d_roll = 25
+set f_roll = 156
+set p_yaw = 38
+set i_yaw = 68
+set f_yaw = 156
+set d_min_roll = 25
+set d_min_pitch = 28
+
+
+# -- Sliders --
+
+set simplified_d_gain = 85
+set simplified_pi_gain = 85
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_pi_gain = 115
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 105
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 150
+
+
+# -- Filters --
+
+set rpm_filter_fade_range_hz = 100
+
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 280
+
+set dterm_lpf1_dyn_min_hz = 95
+set dterm_lpf1_dyn_max_hz = 115
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 0
+
+set yaw_lowpass_hz = 0
+
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 450

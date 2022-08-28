@@ -1,0 +1,29 @@
+#$ TITLE: Feisar ELRS 500Hz freestyle CLI
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: Other
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: other, CLI, betaflight, feisar
+#$ AUTHOR: Feisar
+#$ DESCRIPTION: for ELRS 500Hz
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Memo: "ExpressLRS also sends LQI and RSSI as channels (AUX11/ch15 and AUX12/ch16 respectively)"
+#$ DESCRIPTION: 
+#$ DESCRIPTION: (last preset update : 2022-01-24)
+#$ DESCRIPTION:
+
+
+
+
+# -- usual ELRS + LQ + TX16s receiver settings --
+
+map TAER1234
+set rc_smoothing_auto_factor = 50
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 70
+set feedforward_jitter_factor = 8
+set min_check = 1015
+set max_check = 2000
+set rssi_channel = 15
+set serialrx_provider = CRSF
+set deadband = 2
+set yaw_deadband = 2
