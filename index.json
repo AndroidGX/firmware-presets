@@ -195,6 +195,7 @@
       "3\"",
       "3in",
       "3S",
+      "4\"",
       "4in",
       "4S",
       "5 In",
@@ -249,6 +250,7 @@
       "cinewhoop",
       "clean",
       "clear",
+      "CLI",
       "Configure",
       "control",
       "Crossfire",
@@ -304,6 +306,7 @@
       "HighKV",
       "hot",
       "HV",
+      "iflight",
       "IllusionFpv",
       "immersion",
       "immersionRC",
@@ -336,6 +339,7 @@
       "names",
       "nano",
       "nanohawk",
+      "nazgul",
       "no rpm",
       "noisy",
       "normal",
@@ -343,6 +347,7 @@
       "OpenRacer",
       "OpenVTx",
       "OSD",
+      "other",
       "output limit",
       "OVX300",
       "OVX303",
@@ -823,6 +828,46 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/modes/Feisar_CRSF&ELRS-12ch_freestyle.txt",
+      "hash": "b2c885b23a5dd70e93f1fe04e1d8767f7145b9074237b90706f8a6440605d81e",
+      "title": "Feisar TX16S CRSF & ELRS (12ch) modes settings (freestyle)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "mode",
+        "modes",
+        "aux",
+        "switch",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/modes/Feisar_CRSF-8ch_freestyle.txt",
+      "hash": "dae47341dda7b69677eb04f1355dc78057ae71fe7109fc95490c9077af6a1d79",
+      "title": "Feisar TX16S CRSF (8ch) modes settings (freestyle)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "mode",
+        "modes",
+        "aux",
+        "switch",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
       "title": "Default 4.3 OSD settings",
@@ -837,6 +882,23 @@
         "OSD"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/Feisar_DJI_OSD.txt",
+      "hash": "32c4819dba05837f2a87b6d62359f1304a95d2c008c33e1b756a334d6d2776b7",
+      "title": "Feisar DJI OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
       "priority": 0
     },
     {
@@ -922,6 +984,78 @@
         "utility"
       ],
       "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Feisar_CRSF-150Hz_CLI.txt",
+      "hash": "514562ecc7dd7ec9d2ebb81ea798b9cd60abfef8cdebe7a47ec0efcaaf1a8164",
+      "title": "Feisar CRSF 150Hz freestyle CLI",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "other",
+        "CLI",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Feisar_CRSF-Auto_CLI.txt",
+      "hash": "c4f5985a6571132314b3a0067265dcc3fa24c1258d38fb18b5fe427937adb57b",
+      "title": "Feisar CRSF AUTO freestyle CLI",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "other",
+        "CLI",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Feisar_ELRS-500Hz_CLI.txt",
+      "hash": "1a8c632fd207eabb29d88eeeca36c055564fdf2c1b32161163713999cbd61713",
+      "title": "Feisar ELRS 500Hz freestyle CLI",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "other",
+        "CLI",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Feisar_misc_4.3_CLI.txt",
+      "hash": "be288555fb2fef69ecf3df56994030710a3ddab886a9ab68261249777f5e86c6",
+      "title": "Feisar misc BF 4.3 CLI settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "other",
+        "CLI",
+        "betaflight",
+        "feisar"
+      ],
+      "author": "Feisar",
       "priority": 0
     },
     {
@@ -2378,6 +2512,103 @@
       ],
       "author": "Betaflight",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/Feisar_3_inch_freestyle.txt",
+      "hash": "913263ba78f3781e95c307eacc7a389c9ff85e4276dd4f302254dbaa4c8e2cd2",
+      "title": "Feisar 3\" freestyle",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "6S",
+        "3\"",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Feisar_4_inch_freestyle.txt",
+      "hash": "d1d24c94686432742037d7b70b5511f81389c550cdcf197277f5bbae98d62463",
+      "title": "Feisar 4\" freestyle",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "6S",
+        "4\"",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Feisar_5_inch_freestyle.txt",
+      "hash": "69fbf4571fe58e6e090bb1334f3b4cd49ee2da380aea75939a4f40cc365c20cb",
+      "title": "Feisar 5\" freestyle",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "6S",
+        "5\"",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Feisar_6_inch_freestyle.txt",
+      "hash": "ac5bb5cedae5fe40202a4f495c1c0ab25c34d7edb059df572c983a77c0748390",
+      "title": "Feisar 6\" freestyle",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "6S",
+        "6\"",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/Feisar_iFlight_Nazgul5_freestyle.txt",
+      "hash": "18303c9f96ff040470a21352c90eedeeb939be618647cb6fb0e57f1903824b98",
+      "title": "Feisar 5\" iFlight Nazgul V2 freestyle",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "6S",
+        "5\"",
+        "iflight",
+        "nazgul",
+        "feisar"
+      ],
+      "author": "Feisar",
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/fpvian_basher_freestyle.txt",
